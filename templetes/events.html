@@ -11,14 +11,6 @@
         href="https://fonts.googleapis.com/css2?family=Caladea:ital@1&family=Fredericka+the+Great&family=Satisfy&display=swap"
         rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <script src="CSS and JS/jquery.min.js"></script>
-    <script src="CSS and JS/bootstrap.min.js"></script>
-    <script href="CSS and JS/popper.min.js"></script>
-    <script src="CSS and JS/all.js" data-auto-replace-svg="nest"></script>
-    <link href="CSS and JS/bootstrap.min.css" rel="stylesheet">
-    <link href="CSS and JS/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="CSS and JS/aos.css">
-    <link rel="stylesheet" href="CSS and JS/animate.min.css">
     <meta http-equiv="X-UA-Compatible">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -26,7 +18,7 @@
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css" rel="stylesheet">
-    <link rel="icon" href="logoNoBg2.png">
+    <link rel="icon" href="/logoNoBg2.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link
@@ -34,7 +26,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="teamevents/events_css.css">
+    <link rel="stylesheet" type="text/css" href="event/events_css.css">
 
 </head>
 
@@ -43,8 +35,8 @@
     <nav class="navbar navbar-expand-md navbar-light sticky-top nb" id="navigation">
         <div class="container-fluid " id="navigation">
             <div class="nvlogo animate__animated animate__fadeInUp animate__delay-1s">
-                <a href="home.html" class="navbar-brand">
-                    <img src="logoNoBg2.png" alt="nothing">
+                <a href="/" class="navbar-brand">
+                    <img src="/logoNoBg2.png" alt="nothing">
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -54,19 +46,19 @@
                 id="navbarResponsive">
                 <ul class="navbar-nav navbar-center">
                     <li class="nav-item">
-						<span class="btn1"><a href="home.html" class="nav-link">HOME</a></span>
-					</li>
-					<li class="nav-item">
-                        <span class="btn1"><a href="menu.html" class="nav-link">MENU</a></span>
+                        <span class="btn1"><a href="/" class="nav-link">HOME</a></span>
                     </li>
                     <li class="nav-item">
-                        <span class="btn1"><a href="join_team.htm" class="nav-link">JOIN  OUR  TEAM</a></span>
+                        <span class="btn1"><a href="/menu" class="nav-link">MENU</a></span>
                     </li>
                     <li class="nav-item">
-						<span class=" btn1"><a href="events.html" class="nav-link">EVENTS</a></span>
-					</li>
+                        <span class="btn1"><a href="/team" class="nav-link">JOIN OUR TEAM</a></span>
+                    </li>
                     <li class="nav-item">
-                        <span class="btn1"><a href="contact-us1.html" class="nav-link">CONTACT  US</a></span>
+                        <span class=" btn1"><a href="/event" class="nav-link">EVENTS</a></span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="btn1"><a href="/contact" class="nav-link">CONTACT US</a></span>
                     </li>
                 </ul>
             </div>
@@ -106,11 +98,11 @@
                 <center>
                     <div class="jumbotron xy" id="img">
 
-                        <img src="https://specials-images.forbesimg.com/imageserve/5d93997d793bd50006e98ca4/960x0.jpg?fit=scale"
-                            alt="Picture of team" width="400px" height="280px" class="img-responsive visible-xs img">
+                        <img src="/event/Coverphoto3.jpg" alt="Picture of team" width="400px" height="280px"
+                            class="img-responsive visible-xs img">
 
-                        <img src="https://www.wdwfanzone.com/blog/wp-content/uploads/2013/08/BLOG9.jpg"
-                            alt="Picture of team" width="380px" height="280px" class="img-responsive visible-xs img">
+                        <img src="/event/Coverphoto4.jpg" alt="Picture of team" width="380px" height="280px"
+                            class="img-responsive visible-xs img">
 
                     </div>
                     <br>
@@ -146,23 +138,24 @@
                         <input type="text" pattern="[1-9]{1}[0-9]{9}" name="num1"
                             placeholder="Enter your 10 digit Number">
                     </div>
-                    
+
                     <div class="col-md-8" class="input-container">
                         <label class="input-label" style="color: #800000; font-family: serif; font-size:20px;">Your
                             order details*
                         </label><br>
-                        <textarea name="box1" class="form-control" placeholder="Please mention the quantity with your order." rows="4"></textarea>
+                        <textarea name="box1" class="form-control"
+                            placeholder="Please mention the quantity with your order." rows="4"></textarea>
                     </div>
                     <div class=" col-md-12">
                         <input type="submit" class="btn btn-success btn-send" value="Send message">
                     </div>
                 </form>
                 <div class="row">
-                <div class="col-md-12">
-                    <p class="text-muted"><strong>*</strong> These fields are required.
-                    </p>
+                    <div class="col-md-12">
+                        <p class="text-muted"><strong>*</strong> These fields are required.
+                        </p>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
 
@@ -174,12 +167,11 @@
         <br>
         <center>
             <div class="jumbotron xy">
-                <center><img
-                        src="https://imgcld.yatra.com/ytimages/image/upload/t_yt_blog_c_fill_q_auto:good_f_auto_w_800_h_500/v1508932540/DO_NOT_USE_DISCOVER_INDIA_EDITORIAL/Anchor_Live_Music213.jpg"
-                        alt="Entertainment" width="400px" height="280px" class="img-responsive visible-xs img">
+                <center><img src="/event/Coverphoto5.jpg" alt="Entertainment" width="400px" height="280px"
+                        class="img-responsive visible-xs img">
 
-                    <img src="https://i.pinimg.com/originals/15/74/d2/1574d29ebe7ed309e26a36378e4ebfae.jpg"
-                        alt="Entertainment" width="400px" height="280px" class="img-responsive visible-xs img">
+                    <img src="/event/Coverphoto6.jpg" alt="Entertainment" width="400px" height="280px"
+                        class="img-responsive visible-xs img">
                 </center>
             </div>
             <br>
@@ -224,7 +216,7 @@
 
                     </select>
                 </div>
-                
+
                 <div class="col-md-8" class="input-container">
                     <label class="input-label" style="color: #800000; font-family: serif; font-size:20px;">Your
                         Performance Description*</label><br>
@@ -250,7 +242,7 @@
                     <br>
                 </div>
                 <div class="col-md-4 ">
-                    <img src="logoNobg2.png" alt="" height="70px" width="70px">
+                    <img src="/logoNobg2.png" alt="" height="70px" width="70px">
                     <h3 class="paddingup" style="font-family: 'Oswald', sans-serif;">CORPORATE OFFICE</h3>
                     <p style="font-family: 'Josefin Sans', sans-serif; font-weight: bolder; font-size: 17px;">
                         Deja Brew Cafe House <br> 890 NH6, near IGI Airport <br>New Delhi, India.</p>
@@ -258,7 +250,8 @@
                         Contact: +91 8005596580 </p>
 
 
-                    <p style="font-size: 17px;">Delhi | Mumbai | Ahmedabad | Bangalore | Surat <br> Kolkata | Chennai | Hyderabad</p>
+                    <p style="font-size: 17px;">Delhi | Mumbai | Ahmedabad | Bangalore | Surat <br> Kolkata | Chennai |
+                        Hyderabad</p>
                 </div>
 
                 <div class="col-12 text-center">
