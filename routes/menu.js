@@ -6,8 +6,8 @@ const path = require("path");
 router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../templetes/menu.html'));
 })
-router.get('/menucss.css', (req, res) => {
-    res.sendFile(path.join(__dirname, "../static/menu/menucss.css"));
+router.get("/menucss.css", (req, res) => {
+    res.sendFile(path.join(__dirname, '../static/menu/menucss.css'));
 })
 router.get('/1.jpg', (req, res) => {
     res.sendFile(path.join(__dirname, "../static/menu/1.jpg"));
