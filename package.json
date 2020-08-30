@@ -1,24 +1,15 @@
 {
   "name": "dejabrew",
   "version": "1.0.0",
-  "description": "A cafe",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/krshn-ptl/DejaBrew.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/krshn-ptl/DejaBrew/issues"
-  },
-  "homepage": "https://github.com/krshn-ptl/DejaBrew#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "nodemon": "^2.0.4",
-    "request": "^2.88.2"
+    "nodemon": "^2.0.4"
   }
 }
