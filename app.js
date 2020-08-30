@@ -8,6 +8,7 @@ const evnetRouter = require("./routes/events")
 const path = require("path");
 const PORT = process.env.PORT || 4000;
 
+
 app.use("/", indexRouter);
 app.use("/menu", menuRouter);
 app.use("/contact", contactRouter);
@@ -17,4 +18,6 @@ app.use("/event", evnetRouter);
 app.get("/logoNobg2.png", (req, res) => {
     res.sendFile(path.join(__dirname, "static/logoNobg2.png"));
 })
+
+
 app.listen(PORT);   
