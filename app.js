@@ -8,7 +8,6 @@ const evnetRouter = require("./routes/events")
 const path = require("path");
 const PORT = process.env.PORT || 4000;
 
-
 app.use("/", indexRouter);
 app.use("/menu", menuRouter);
 app.use("/contact", contactRouter);
@@ -19,5 +18,9 @@ app.get("/logoNobg2.png", (req, res) => {
     res.sendFile(path.join(__dirname, "static/logoNobg2.png"));
 })
 
+app.listen(PORT);
 
-app.listen(PORT);   
+app.use(function (req, res, next) {
+    res.status(404);
+    res.render("404.jade", { title: "error 404" })
+})  
