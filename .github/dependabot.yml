@@ -1,7 +1,10 @@
-version: 1
+
+version: 2
 updates:
-  -package-ecosystem: "npm"
-  directory: "/"
-  schedule: 
-    interval: "daily"
-  branch_name_prefix: "npm"
+  # Maintain dependencies for npm
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    branch_name_prefix: "npm"
+    branch_name_separator: "-"
