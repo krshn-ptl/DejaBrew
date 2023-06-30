@@ -6,5 +6,6 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    branch_name_prefix: "npm"
-    branch_name_separator: "-"
+    pull-request-branch-name:
+      separator: "-"
+      prefix: "npm"
